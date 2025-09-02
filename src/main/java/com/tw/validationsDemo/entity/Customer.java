@@ -5,13 +5,13 @@ import jakarta.validation.constraints.Size;
 
 public class Customer {
 
-    @NotNull(message="first name cannot be null")
-    @Size(min=1, message="first name cannot be single character")
+    @NotNull(message = "valid first name is required")
+    @Size(min = 1, message = "valid first name is required")
     private String firstName;
 
     private String lastName;
 
-    public Customer(){
+    public Customer() {
 
     }
 
