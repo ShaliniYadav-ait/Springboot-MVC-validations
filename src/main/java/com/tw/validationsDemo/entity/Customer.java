@@ -1,5 +1,6 @@
 package com.tw.validationsDemo.entity;
 
+import com.tw.validationsDemo.customAnnotations.CourseCode;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
@@ -21,6 +22,9 @@ public class Customer {
     @NotNull
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "length should 5 chars/digits")
     private String postCode;
+
+    @CourseCode(value = "TEST", message = "Course should start with TEST")
+    private String courseCode;
 
     public Customer() {
 
