@@ -54,6 +54,10 @@ public class Customer {
         this.freePasses = freePasses;
     }
 
+    public void setFreePasses(Integer freePasses) {
+        this.freePasses = freePasses;
+    }
+
     public String getPostCode() {
         return postCode;
     }
@@ -62,4 +66,11 @@ public class Customer {
         this.postCode = postCode;
     }
 
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
 }
