@@ -1,12 +1,11 @@
 package com.tw.validationsDemo.entity;
 
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 
 public class Customer {
 
     @NotNull(message = "valid first name is required")
-    @Size(min = 1, message = "valid first name is required")
+//    @Size(min = 1, message = "valid first name is required")
     private String firstName;
 
     private String lastName;
