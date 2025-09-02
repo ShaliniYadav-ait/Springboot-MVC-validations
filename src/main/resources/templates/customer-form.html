@@ -14,10 +14,14 @@
 
 <i>Fill out the form. Fields marked with asterisk(*) are required.</i>
 <br><br>
-<form method="POST" th:action="@{/processForm}" th:object="customer">
-    First name : <input th:field="*{firstName}" type="text"/>
+<form method="POST" th:action="@{/processForm}" th:object="${customer}">
+    First name(*) : <label>
+    <input th:field="*{firstName}" type="text"/>
+</label>
     <br><br>
-    Last name : <input th:field="*{lastName}" type="text"/>
+    Last name : <label>
+    <input th:field="*{lastName}" type="text"/>
+</label>
     <br><br>
     <span class="error"
           th:error="*{firstName}"
