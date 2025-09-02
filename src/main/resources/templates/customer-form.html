@@ -25,6 +25,12 @@
     <br><br>
     Last name : <label>
     <input th:field="*{lastName}" type="text"/>
+    <br><br>
+    Passes : <input th:field="*{freePasses}" type="text"/>
+    <span class="error"
+          th:errors="*{freePasses}"
+          th:if="${#fields.hasErrors('freePasses')}"></span>
+
 </label>
     <br><br>
 
