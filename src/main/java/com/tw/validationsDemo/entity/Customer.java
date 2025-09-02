@@ -13,9 +13,10 @@ public class Customer {
 
     private String lastName;
 
+    @NotNull
     @Min(value = 1, message = "must be greater than 0")
     @Max(value = 10, message = "must be less than or equal to 10")
-    private int freePasses;
+    private Integer freePasses = 0;
 
     @NotNull
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "length should 5 chars/digits")
